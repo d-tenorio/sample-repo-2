@@ -1,0 +1,25 @@
+
+Git and Github
+
+"git bash" -> name for the terminal in Windows
+git -> language for version control
+bash -> flavor of operating system called Linux
+Github -> storage space online
+
+Problem: we want to store our code.
+Specifically, we want to store different versions of our code.
+    If we upload new code that's broken, we want to be able
+    to revert to an older version of code ASAP.
+
+Keep track of two separate versions of our code to start.
+    Local version, on our machine.
+    External version, located in Github.
+
+When we make changes on the LOCAL version, we need to send them
+to the EXTERNAL version when we're ready. 
+
+git init 
+    (initialize a local repository)
+git status
+    (lets me know what branch I'm on and what changes are
+    committed or uncommitted)
