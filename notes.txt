@@ -28,6 +28,9 @@ git add filename.txt
     (lists the specific changes to store in the repository)
 git commit -m "some commit message"
     (sealing the list of changes to be stored)
+    git commit
+        might end up in Vim. To exit Vim, press
+        ESC, :, q!
 git push 
     (sends the changes to the EXTERNAL repository)
 git push --set-upstream origin master
@@ -49,6 +52,3 @@ git pull
 
 git clone <url>
     (make a local copy of an external repository)
-
-
-THIS LINE ONLY EXISTS IN THE SECOND COPY YOU MADE
