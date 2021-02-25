@@ -15,10 +15,11 @@ document.guessGame.appendChild(feedback);
 When this function runs, it will take the value of the input
 tag on the page and log it to the console.
 */
-function Button(guessInput) {
-    console.log(guessInput);
+var theButton = new Object();
+function theButton.onclick("input") {
+    console.log();
 }
 
 // Add that function to the onclick property of
 // the button on the page.
-document.onclick.appendChild(Button);
+document.onclick.appendChild(theButton);
