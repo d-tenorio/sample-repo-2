@@ -9,7 +9,8 @@ let feedback = document.createElement("div");
             let container = document.querySelector(".guessGame");
     // then, append it.
             container.appendChild(feedback);
-// THIS IS WRONG // document.guessGame.appendChild(feedback);
+/* THIS IS WRONG
+document.guessGame.appendChild(feedback); */
 
 /* Create a function that will run when the button is clicked.
 When this function runs, it will take the value of the input
@@ -24,18 +25,62 @@ tag on the page and log it to the console.
         // then, just log it (FOR NOW)
         console.log(userInput);
     }
-// THIS IS ALSO WRONG // 
-//var Button = new Object();
-// function Button.onclick("guessInput") {
-//     console.log("guessInput");
-// }
+/* THIS IS ALSO WRONG
+var Button = new Object();
+ function Button.onclick("guessInput") {
+     console.log("guessInput");
+} /*
 
-// Add that function to the onclick property of
-// the button on the page.
+// Add that function to the onclick property of the button on the page.
         let button = document.querySelector(".guessButton");
 // use the function (by name) as the value
-        button.onclick = logValue; // note the lack of paprantheses
-// THIS IS ALSO WRONG
-//     logValue.guessButton = function() {
-//     logValue.onclick
-// }
+        button.onclick = logValue;
+        // note the lack of paprantheses
+/* THIS IS ALSO WRONG
+    logValue.guessButton = function() {
+    logValue.onclick
+} */
+
+
+// Now, let's make the function called when the button is clicked
+// actually play the game. First, change the name of
+// the function to something more sensible like playGame
+let playGame = new logValue();
+
+// Inside that function...
+// Make a new variable to store the true answer. This variable
+// should have a value of a randomly chosen number between
+// 1 and 100 (including the values 1 and 100).
+var truAnswer = function(randomNumb){
+    function randomNumb(min, max) {
+        min = Math.ceil(1);
+        max = Math.floor(100);
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+}
+// Compare the user's guess to the actual answer. 
+    let userGuess = playGame(logValue);
+        if  (userGuess > truAnswer) {
+            document.innerText("too high");
+        }
+
+        if (userGuess < truAnswer) {
+            document.innerText("too low");
+        }
+
+        else if (userGuess === truAnswer) {
+            document.innerText("You've won!");
+        }
+    
+//Then, modify
+// the text inside the feedback div you created as follows:
+
+
+// If the guess is too high, tell the user "Too high"
+// If the guess is too low, tell the user "Too low"
+// If the guess is right, tell the user they've won!
+
+// Note: right now, your game will generate a new guess
+// each time the user clicks the button. That's -okay-
+// for now, though soon we'll make changes so that the user's
+// guesses all check against the same correct answer.
