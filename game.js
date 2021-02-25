@@ -1,3 +1,4 @@
+Vanessa
 // Create a new div
 // Give this new div a class of "feedback"
 // Append this new div to the div with class "guessGame"
