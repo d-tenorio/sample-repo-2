@@ -32,4 +32,10 @@ tag on the page and log it to the console.
 
 // Add that function to the onclick property of
 // the button on the page.
-document.onclick.appendChild(theButton);
+        let button = document.querySelector(".guessButton");
+// use the function (by name) as the value
+        button.onclick = logValue; // note the lack of paprantheses
+// THIS IS ALSO WRONG
+//     logValue.guessButton = function() {
+//     logValue.onclick
+// }
